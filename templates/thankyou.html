@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pysch - Thank You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .message-box {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #2E86C1;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #2E86C1;
+            padding: 12px 25px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        a:hover {
+            background-color: #1B4F72;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box">
+        <h1>Thank You, {{ user_name }}!</h1>
+        <p>Your appointment has been scheduled </b>.</p>
+    <p>An email confirmation has been sent to you.</p>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

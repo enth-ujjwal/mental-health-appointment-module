@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pysch - Mental Health Support</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: #2E86C1;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: fadeIn 2s 1s ease-in-out forwards;
+            opacity: 0;
+        }
+        button {
+            padding: 15px 40px;
+            font-size: 18px;
+            background-color: #2E86C1;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #1B4F72;
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Pysch</h1>
+    <p>Book your mental health appointment with our counselors easily.</p>
+    <button onclick="goToBooking()">Book Appointment</button>
+
+    <script>
+        function goToBooking() {
+            window.location.href = "/book";
+        }
+    </script>
+</body>
+</html>
+ 
